@@ -1,0 +1,271 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+.welcome-popup {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* green vibe */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.welcome-popup.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contact-info{
+    color:black;
+}
+/* Logo and heading */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+.logo {
+  width: 60px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.6); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+/* Center content */
+.middle-section {
+  font-size: 14px;
+}
+
+/* Search + toggle */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn,
+.menu-toggle {
+  padding: 6px 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 18px;
+}
+
+/* List (dropdown) menu */
+
+.nav-links {
+  position: absolute; /* Position it relative to its parent */
+  top: 60px; /* Adjust this based on your navbar height */
+  right: 0; /* Push it to the right */
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: #111;
+  padding: 10px 20px;
+  margin: 0;
+  z-index: 99;
+  border-radius: 0 0 0 10px;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 8px 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.button{
+    color: white;
+  text-decoration: none;
+}
+
+.topButton{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    gap: 20px;
+}
+
+ 
+
+  .container1 {
+    width: 250px;
+    background-color:#EDFFD9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Up and down effect */
+  .container1:nth-child(odd) {
+    transform: translateY(-15px);
+  }
+
+  .container1:nth-child(even) {
+    transform: translateY(15px);
+  }
+
+  .image2 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 250px;
+  }
+
+ 
+
+    .container1:hover {
+      transform: translateY(-10px);
+    }
+
+    
+    
+
+    /* POPUP STYLES */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      animation: zoomIn 0.4s ease;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .popup img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .popup button {
+      margin: 10px;
+    } 
+    .logo:hover {
+  transform: scale(1.3); /* looks more dramatic */
+  transition: transform 0.3s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+hr {
+  width: 0;
+  height: 3px;
+  background: #100e8f;
+  border: none;
+  transition: width 1s ease;
+  margin: 20px auto;
+}
