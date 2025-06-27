@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="index.css">
+      <script src="scriptMain.js" defer></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Your Brand</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .about-section {
+      background: #48D1FF; /* Aqua Blue */
+      color: #ffffff;
+      padding: 60px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section::after {
+      content: "";
+      background: url('images/soil.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      opacity: 0.8;
+      z-index: 1;
+    }
+
+    .about-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-title {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      border-bottom: 4px solid #1a1a1a;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .about-section::after {
+        display: none;
+      }
+
+      .about-content {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    
+  <header class="navbar bg-dark text-white d-flex justify-content-between align-items-center p-2">
+  <div class="d-flex align-items-center gap-2">
+    
+    <!-- Logo Image (clickable) -->
+<img src="images/logo.png" alt="Logo" class="logo" onclick="showLogoPopup()">
+
+<div id="logoPopup" class="popup" onclick="hideLogoPopup()">
+  <img src="images/logo.png" alt="Zoomed Logo" class="popup-img">
+</div>
+
+    <h1 class="h4 m-0">Welcome</h1>
+  </div>
+
+  <p class="m-0 text-center">Location</p>
+
+  <div class="d-flex align-items-center gap-1">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search here...">
+      <button class="btn btn-light">Search</button>
+    </div>
+    <button class="btn btn-light" id="toggleBtn">+</button>
+  </div>
+</header>
+
+
+  <!-- TOGGLE MENU LIST -->
+  <ul class="nav-links" id="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section d-flex align-items-center">
+    <div class="container about-content">
+      <h1 class="about-title">About Us</h1>
+      <p class="about-text">
+        We are farmers group it's help for selling and buying from other farmer it's like digital mandi.
+      </p>
+      <p class="about-text">
+🌾 About Us
+We are a passionate community of farmers working together to support each other in buying and selling fresh produce directly — no middlemen, just pure farm-to-farm deals.
+This platform is our digital mandi — built by farmers, for farmers — to make trading easier, faster, and more transparent.
+We believe in growing together, supporting local farming, and creating a stronger, self-reliant agri-network. 🌱✨
+
+      </p>
+      <p class="about-text">
+                We are farmers group it's help for selling and buying from other farmer it's like digital mandi.
+
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

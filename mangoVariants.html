@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="scriptMain.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Bootstrap CSS CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    
+    <!-- Bootstrap JS CDN -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    defer
+    ></script>
+
+</head>
+<body>
+  <header class="navbar bg-dark text-white d-flex justify-content-between align-items-center p-2">
+  <div class="d-flex align-items-center gap-2">
+    
+    <!-- Logo Image (clickable) -->
+<img src="images/logo.png" alt="Logo" class="logo" onclick="showLogoPopup()">
+
+<div id="logoPopup" class="popup" onclick="hideLogoPopup()">
+  <img src="images/logo.png" alt="Zoomed Logo" class="popup-img">
+</div>
+
+    <h1 class="h4 m-0">Welcome</h1>
+  </div>
+
+  <p class="m-0 text-center">Location</p>
+
+  <div class="d-flex align-items-center gap-1">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search here...">
+      <button class="btn btn-light">Search</button>
+    </div>
+    <button class="btn btn-light" id="toggleBtn">+</button>
+  </div>
+</header>
+
+
+  <!-- TOGGLE MENU LIST -->
+  <ul class="nav-links" id="list">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+<div class="main-container">
+  <!-- Ataulfo -->
+  <div class="container1" onclick="showPopup('mangoatulfoPopup')">
+    <img src="images/atulfo.jpg" alt="Ataulfo" class="image2">
+    <h3>Ataulfo</h3>
+    <p>Small, sweet, and creamy. Known for its buttery texture and little fiber.</p>
+  </div>
+
+  <div id="mangoatulfoPopup" class="popup" onclick="hidePopup('mangoatulfoPopup')">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <img src="images/atulfo.jpg" alt="Mango Enlarged">
+    <h3>Mango</h3>
+    <p>Mangoes are juicy, sweet fruits packed with vitamin C, A, and fiber. Great for immunity, skin health, and smoothies!</p>
+    <button class="btn btn-success">Sell</button>
+    <button class="btn btn-info"><a href="https://www.flipkart.com/exotica-ataulfo-mango-plant/p/itm63a34c69eb40c">Buy</a></button>
+        <button class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Ataulfo_(mango)">Know More</a></button>
+
+</div>
+</div>
+
+  <!-- Amrapali -->
+  <div class="container1">
+    <img src="images/amarapali.jpg" alt="Amrapali" class="image2">
+    <h3>Amrapali</h3>
+    <p>Rich in taste and pulp. A hybrid mango developed in India. Juicy and deep orange!</p>
+  </div>
+
+  <!-- Alphonso -->
+  <div class="container1">
+    <img src="images/alphonso.jpg" alt="Alphonso" class="image2">
+    <h3>Alphonso</h3>
+    <p>India’s king of mangoes! Sweet, rich flavor and super aromatic.</p>
+  </div>
+
+  <!-- Irwin -->
+  <div class="container1">
+    <img src="images/irwin.jpg" alt="Irwin" class="image2">
+    <h3>Irwin</h3>
+    <p>Bright red skin, firm flesh, and low fiber. Originated from Florida, USA.</p>
+  </div>
+
+  <!-- Keitt -->
+  <div class="container1">
+    <img src="images/keithi.jpg" alt="Keitt" class="image2">
+    <h3>Keitt</h3>
+    <p>Green even when ripe! Mildly sweet with lots of juicy flesh.</p>
+  </div>
+
+  <!-- Ice Cream -->
+  <div class="container1">
+    <img src="images/ice cream.jpg" alt="Ice Cream Mango" class="image2">
+    <h3>Ice Cream</h3>
+    <p>Ultra sweet and creamy! Small but big on flavor — like mango kulfi 🍧</p>
+  </div>
+
+  <!-- Gir Kesar -->
+  <div class="container1">
+    <img src="images/gir keasr.jpg" alt="Gir Kesar" class="image2">
+    <h3>Gir Kesar</h3>
+    <p>From Gujarat! Known for its saffron color and unique fragrance.</p>
+  </div>
+
+  <!-- Sensation -->
+  <div class="container1">
+    <img src="images/sensation.jpg" alt="Sensation" class="image2">
+    <h3>Sensation</h3>
+    <p>Reddish-purple peel, smooth flesh, and tropical flavor. Eye-catcher mango!</p>
+  </div>
+</div>
+</body>

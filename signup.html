@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer Mandi Signup</title>
+  <link rel="stylesheet" href="farmer-mandi.css">
+</head>
+<body>
+
+  <header>🌾 Farmer Mandi Portal 🌱</header>
+
+  <form id="signupForm">
+    <h2>Signup</h2>
+    <input type="text" id="Name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="e.g. vishwa@gmail.com" required />
+    <input type="text" id="signupUsername" placeholder="Username" required />
+    <input type="password" id="signupPassword" placeholder="Password" required />
+    <button type="submit" onclick="submitClicked(event)">Sign Up</button>
+    <a href="login.html">Already have an account? Login</a>
+  </form>
+<script src="script.js"></script>
+<script src="server.js"></script>
+</body>
+</html>
+
+<style>
+  /* farmer-mandi.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #2e7d32; /* Deep green */
+}
+
+form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #81c784; /* Light green border */
+}
+
+button {
+  background-color: #ff9800; /* Orange */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e65100; /* Darker orange */
+}
+
+a {
+  color: #388e3c;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional banner */
+header {
+  background-color: #43a047;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+</style>

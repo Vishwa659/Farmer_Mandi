@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer Mandi Login</title>
+  <link rel="stylesheet" href="farmer-mandi-login.css">
+</head>
+<body>
+
+  <header>🌿 Farmer Mandi Login Portal</header>
+
+  <form id="loginForm">
+    <h2>Login</h2>
+    <input type="text" id="loginUsername" placeholder="Enter Username" required />
+    <input type="password" id="loginPassword" placeholder="Enter Password" required />
+    <button type="submit" onclick="submitLoginClicked(event)">Login</button>
+    <a href="signup.html">Don't have an account? Sign up</a>
+  </form>
+
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+
+</body>
+</html>
+
+
+<style>
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf6; /* light farmy tone */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #43a047; /* green banner */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 100, 0, 0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #81c784;
+  outline: none;
+}
+
+button {
+  background-color: #ff9800; /* sunny orange */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ef6c00; /* darker orange */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #388e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
